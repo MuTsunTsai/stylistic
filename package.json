@@ -1,0 +1,33 @@
+{
+	"name": "@mutsuntsai/stylistic",
+	"version": "1.0.0",
+	"description": "Customized Stylistic config.",
+	"main": "index.mjs",
+	"scripts": {
+		"test": "eslint"
+	},
+	"keywords": [
+		"eslint"
+	],
+	"author": "Mu-Tsun Tsai <don.m.t.tsai@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^9.5.0"
+	},
+	"dependencies": {
+		"@stylistic/eslint-plugin": "^2.3.0"
+	},
+	"peerDependencies": {
+		"eslint": "^9.5.0"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"allowAny": [
+				"eslint"
+			]
+		}
+	},
+	"files": [
+		"index.mjs"
+	]
+}
