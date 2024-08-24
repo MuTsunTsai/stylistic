@@ -45,7 +45,10 @@ export default [
 					},
 				},
 			],
-			"@stylistic/indent": ["warn", "tab"],
+			"@stylistic/indent": ["warn", "tab", {
+				flatTernaryExpressions: true,
+				SwitchCase: 1,
+			}],
 			"@stylistic/indent-binary-ops": "off",
 			"@stylistic/jsx-closing-tag-location": "off",
 			"@stylistic/jsx-curly-newline": "off",
@@ -61,6 +64,7 @@ export default [
 				},
 			],
 			"@stylistic/keyword-spacing": "off",
+			"@stylistic/lines-between-class-members": "off",
 			"@stylistic/max-len": [
 				"warn",
 				{
@@ -87,11 +91,18 @@ export default [
 					},
 				},
 			],
+			"@stylistic/multiline-ternary": "off",
 			"@stylistic/no-mixed-operators": "off",
 			"@stylistic/no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+			"@stylistic/no-multiple-empty-lines": ["warn", {
+				max: 1,
+				maxEOF: 1,
+				maxBOF: 1,
+			}],
 			"@stylistic/no-tabs": "off",
 			"@stylistic/operator-linebreak": ["warn", "after"],
-			"@stylistic/quote-props": ["warn", "as-needed"],
+			"@stylistic/padded-blocks": "off",
+			"@stylistic/quote-props": ["warn", "consistent-as-needed"],
 			"@stylistic/quotes": [
 				"warn",
 				"double",
@@ -109,6 +120,7 @@ export default [
 					named: "never",
 				},
 			],
+			"@stylistic/spaced-comment": "off",
 			"@stylistic/type-annotation-spacing": [
 				"warn",
 				{
@@ -122,6 +134,10 @@ export default [
 				},
 			],
 			"@stylistic/wrap-iife": ["warn", "inside"],
+			"@stylistic/yield-star-spacing": ["warn", {
+				before: false,
+				after: true,
+			}],
 		},
 	},
 ];
