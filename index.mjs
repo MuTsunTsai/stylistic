@@ -52,7 +52,6 @@ export default [
 			"@stylistic/indent-binary-ops": "off",
 			"@stylistic/jsx-closing-tag-location": "off",
 			"@stylistic/jsx-curly-newline": "off",
-			"@stylistic/jsx-indent": ["warn", "tab"],
 			"@stylistic/jsx-indent-props": ["warn", "tab"],
 			"@stylistic/jsx-one-expression-per-line": "off",
 			"@stylistic/jsx-wrap-multilines": "off",
@@ -128,6 +127,9 @@ export default [
 					before: false,
 					overrides: {
 						arrow: {
+							before: true,
+						},
+						operator: {
 							before: true,
 						},
 					},
