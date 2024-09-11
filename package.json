@@ -12,10 +12,10 @@
 	"author": "Mu-Tsun Tsai <don.m.t.tsai@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"eslint": "^9.9.1"
+		"eslint": "^9.10.0"
 	},
 	"dependencies": {
-		"@stylistic/eslint-plugin": "^2.7.2"
+		"@stylistic/eslint-plugin": "^2.8.0"
 	},
 	"peerDependencies": {
 		"eslint": "^9.5.0"

@@ -62,7 +62,7 @@ export default [
 					mode: "strict",
 				},
 			],
-			"@stylistic/keyword-spacing": "off",
+			"@stylistic/keyword-spacing": "off", // VS Code handles this already
 			"@stylistic/lines-between-class-members": "off",
 			"@stylistic/max-len": [
 				"warn",
@@ -127,9 +127,6 @@ export default [
 					before: false,
 					overrides: {
 						arrow: {
-							before: true,
-						},
-						operator: {
 							before: true,
 						},
 					},
