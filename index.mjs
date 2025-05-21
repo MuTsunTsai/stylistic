@@ -2,7 +2,7 @@ import pluginStyle from "@stylistic/eslint-plugin";
 
 // Severities are all "error" in presets.
 // We change those to "warn" here.
-const preset = pluginStyle.configs["recommended-flat"];
+const preset = pluginStyle.configs.recommended;
 for(const key in preset.rules) {
 	const rule = preset.rules[key];
 	if(rule == "error") preset.rules[key] = "warn";
@@ -10,8 +10,12 @@ for(const key in preset.rules) {
 }
 
 export default [
-	preset,
 	{
+		name: "Stylistic recommended",
+		...preset,
+	},
+	{
+		name: "Stylistic override",
 		rules: {
 			"@stylistic/array-bracket-newline": ["warn", "consistent"],
 			"@stylistic/arrow-parens": ["warn", "as-needed"],
